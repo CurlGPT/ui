@@ -1,6 +1,6 @@
 {
-    "name": "@loki/ui-button",
-    "version": "1.0.0",
+    "name": "@lokeswaran-aj/ui-custom-button",
+    "version": "1.0.1",
     "description": "Custom button",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/indes.js",
@@ -8,6 +8,9 @@
     "files": [
         "dist"
     ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/lokeswaran-aj"
+    },
     "scripts": {
         "dev": "rollup -c --watch",
         "build": "rollup -c"
