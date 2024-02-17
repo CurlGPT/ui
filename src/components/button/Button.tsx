@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = (props) => {
     const { label } = props;
-    return <div className="p-2">{label}</div>;
+    return <div className="p-2 b-2">{label}</div>;
 };
 
 export default Button;
