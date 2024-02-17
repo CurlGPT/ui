@@ -6,8 +6,9 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: FC<ButtonProps> = (props) => {
-    const { variant, children, style } = props;
+    const { variant, children, style, disabled } = props;
     const colorClass = () => {
+        if (disabled) return {};
         if (variant === "primary")
             return {
                 borderColor: "#6366F1",
